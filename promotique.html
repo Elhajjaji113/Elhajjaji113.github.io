@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotique SRL | Brunico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-gold: #BC9C22;
+            --color-blue: #2B4257;
+            --color-bg: #FAF9F6;
+            --color-text: #2C3E50;
+            --color-white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        header {
+            margin-top: 1rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(188, 156, 34, 0.12);
+            color: var(--color-gold);
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            border: 1px solid rgba(188, 156, 34, 0.3);
+            margin-bottom: 2rem;
+        }
+
+        main {
+            max-width: 650px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* LOGO SVG INTEGRATO PERFETTO CON NASELLO IN SECONDO PIANO */
+        .logo-container {
+            width: 100%;
+            max-width: 320px;
+            margin-bottom: 2.5rem;
+        }
+
+        .logo-container svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--color-blue);
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        p.description {
+            font-size: 1.1rem;
+            color: #5A6B7C;
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+            font-weight: 400;
+        }
+
+        .card {
+            background: var(--color-white);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(43, 66, 87, 0.06);
+            border: 1px solid rgba(43, 66, 87, 0.08);
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            font-size: 1rem;
+            color: var(--color-blue);
+            font-weight: 500;
+        }
+
+        .contact-item svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--color-gold);
+        }
+
+        .contact-item a {
+            color: var(--color-blue);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--color-gold);
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: #8A99A8;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+            p.description {
+                font-size: 0.98rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="badge">Sito in Costruzione</span>
+    </header>
+
+    <main>
+        <!-- LOGO VETTORIALE SVG (Nasello in Secondo Piano) -->
+        <div class="logo-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380">
+                <!-- 1. NASELLO IN SECONDO PIANO (Disegnato per primo) -->
+                <path d="M 285 115 C 310 85, 335 100, 325 125" fill="none" stroke="#2B4257" stroke-width="9" stroke-linecap="round" />
+                <ellipse cx="327" cy="138" rx="8" ry="18" fill="#BC9C22" stroke="#2B4257" stroke-width="3" transform="rotate(-15 327 138)" />
+
+                <!-- 2. LENTE PRINCIPALE CON RIEMPIMENTO BIANCO (Copre l'origine del nasello) -->
+                <ellipse cx="200" cy="115" rx="110" ry="75" fill="#FAF9F6" stroke="#BC9C22" stroke-width="12" />
+
+                <!-- 3. ASTA VERTICALE E PENDENTE -->
+                <line x1="90" y1="115" x2="90" y2="280" stroke="#2B4257" stroke-width="12" stroke-linecap="round" />
+                <ellipse cx="90" cy="305" rx="18" ry="30" fill="#FAF9F6" stroke="#2B4257" stroke-width="8" />
+                
+                <!-- Righette dentro il pendente -->
+                <line x1="77" y1="293" x2="103" y2="293" stroke="#2B4257" stroke-width="4" stroke-linecap="round" />
+                <line x1="75" y1="299" x2="105" y2="299" stroke="#2B4257" stroke-width="4" stroke-linecap="round" />
+                <line x1="74" y1="305" x2="106" y2="305" stroke="#2B4257" stroke-width="4" stroke-linecap="round" />
+                <line x1="75" y1="311" x2="105" y2="311" stroke="#2B4257" stroke-width="4" stroke-linecap="round" />
+                <line x1="77" y1="317" x2="103" y2="317" stroke="#2B4257" stroke-width="4" stroke-linecap="round" />
+
+                <!-- 4. TIPOGRAFIA -->
+                <text x="200" y="355" font-family="'Montserrat', sans-serif" font-size="24" font-weight="700" fill="#2B4257" text-anchor="middle" letter-spacing="8">PROMOTIQUE</text>
+                <text x="200" y="375" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="#BC9C22" text-anchor="middle" letter-spacing="4">SRL | BRUNICO</text>
+            </svg>
+        </div>
+
+        <h1>Il nuovo sito web è in arrivo</h1>
+        <p class="description">
+            Stiamo lavorando per offrirvi un'esperienza digitale all'altezza dei nostri standard.
+            A breve saremo online con la nuova piattaforma.
+        </p>
+
+        <div class="card">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <span>Brunico (BZ), Alto Adige - Italia</span>
+                </div>
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    <a href="mailto:info@promotique.it">info@promotique.it</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Promotique SRL. Tutti i diritti riservati.
+    </footer>
+
+</body>
+</html>
